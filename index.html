@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./index.css" />
+	<title>Star War</title>
+</head>
+<body>
+	<header>
+		<img src="./star_wars.svg" />
+	</header>
+	<div class="container">
+		<div class="head-form">
+			<form>
+				<select id="select" name="selector" onchange="">
+					<option value="">Select a movie</option>
+					<option value="">Episode I</option>
+					<option value="">Episode II</option>
+					<option value="">Episode III</option>
+					<option value="">Episode IV</option>
+					<option value="">Episode V</option>
+					<option value="">Episode VI</option>
+				</select>
+			</form>
+			<button onclick="listGenerator()">Récupérer les données</button>
+		</div>
+		<div>
+			<ul id="list"></ul>
+		</div>
+	</div>
+	<div id="main"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.5.2/echarts.common.min.js"></script>
+	<script src="./script.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
